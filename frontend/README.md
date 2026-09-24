@@ -120,6 +120,11 @@ Para ejecutar el proyecto localmente:
    npm run build
    ```
 
+## Server access
+
+* Backend: `http://localhost:3000`
+* Frontend (development): `http://localhost:5173`
+
 ## Autor
 
 Félix Sinovas
