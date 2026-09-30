@@ -5,9 +5,10 @@ import CurrentUserContext from "../../../../contexts/CurrentUserContext.js";
 
 export default function Card(props) {
   const { card, handleOpenPopup, onCardLike, onCardDelete } = props;
-  const { currentUser } = useContext(CurrentUserContext);
-  const { name, link, isLiked, owner } = card;
+    const { currentUser } = useContext(CurrentUserContext);
+  const { name, link, likes, owner } = card;
   const isOwn = owner === currentUser._id;
+  const isLiked = likes.some((userId) => userId === currentUser._id);
 
   const cardLikeButtonClassName = `card__like-button ${
     isLiked ? "card__like-button_is-active" : ""

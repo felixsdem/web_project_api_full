@@ -80,7 +80,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://localhost:3000",
+  baseUrl: "http://api.felix-around.chickenkiller.com",
 });
 
 export default api;

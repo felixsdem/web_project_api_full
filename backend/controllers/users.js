@@ -1,3 +1,4 @@
+const ConflictError = require('../errors/conflict-error');
 const bcrypt = require('bcryptjs');
 const User = require('../models/user');
 
@@ -39,8 +40,8 @@ module.exports.createUser = (req, res, next) => {
       }
 
       if (err.code === 11000) {
-        return next(new BadRequestError('El correo ya está registrado'));
-      }
+  return next(new ConflictError('El correo ya está registrado'));
+}
 
       return next(err);
     });
