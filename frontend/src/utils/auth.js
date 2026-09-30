@@ -1,4 +1,4 @@
-const BASE_URL = "http://api.felix-around.chickenkiller.com";
+const BASE_URL = "https://api.felix-around.chickenkiller.com";
 
 function checkResponse(res) {
   if (res.ok) {

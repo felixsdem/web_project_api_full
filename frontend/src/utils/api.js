@@ -80,7 +80,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://api.felix-around.chickenkiller.com",
+  baseUrl: "https://api.felix-around.chickenkiller.com",
 });
 
 export default api;
